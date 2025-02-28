@@ -11,6 +11,7 @@ import {
 } from '@solana/wallet-adapter-react-ui';
 import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { useMemo } from 'react'
+import Faucet from './components/Faucet'
  
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
         <WalletDisconnectButton></WalletDisconnectButton>
        </div>
 
-        <TokenLaunchpad></TokenLaunchpad>
+        <Faucet></Faucet>
 
 
        </WalletModalProvider>
