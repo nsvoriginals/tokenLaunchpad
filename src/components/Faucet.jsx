@@ -30,7 +30,8 @@ export default function Faucet() {
                 onChange={(e) => setSol(Number(e.target.value))}
                 placeholder="Enter number of SOL"
             />
-            <button onClick={handleDrop} disabled={!wallet.publicKey}>
+      
+      <button onClick={handleDrop} disabled={!wallet.publicKey}>
                 Airdrop
             </button>
             <div>{wallet.publicKey?.toBase58()}</div>
